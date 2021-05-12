@@ -1,3 +1,8 @@
+# Author: Alex Sheets
+# Email: asheet3@lsu.edu
+# Discord: dasein#8561
+
+
 import requests, json, sys, re, time, random, datetime, threading, csv, lxml.html, os, base64
 
 from bs4 import BeautifulSoup as bs
