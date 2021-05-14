@@ -399,7 +399,6 @@ def run():
     for i in range(len(task_list)):
         task_info_c = task_list[i]
         try:
-            # use PIDS instead of links because nvidia does not have separate links
             if str(task_info_c[0]) != "LINK":
                 thread = threading.Thread(target=Checkout,
                                           args=(task_info_c[0], task_info_c[1], task_info_c[2], task_info_c[3],
