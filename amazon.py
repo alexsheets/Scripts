@@ -28,7 +28,7 @@ def download_captcha(url):
     urllib.request.URLopener().retrieve(url, 'captcha_img.jpg')
     print_format("Successfully got captcha image, solving")
     files = {'file_contents': open('captcha_img.jpg', 'rb')}
-    captcha_key = "d2acd4f5749452299eb834949c6de6b0"
+    captcha_key = ""
     cap_in = requests.post(f'https://2captcha.com/in.php?key={captcha_key}&method=post&file_contents=', files=files)
     print_format("Captcha requested")
     if cap_in.text[0:2] == 'OK':
