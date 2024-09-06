@@ -302,7 +302,7 @@ class amazon:
             # self.rem_cookies()
             
             # print(html_string)
-            print("FIX THIS POST SHIPPING SHIT!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!")
+            print("post shipping err")
 
         if 'choose your shipping options' in html_string.lower():
             self.post_shipping_method(html_string)
